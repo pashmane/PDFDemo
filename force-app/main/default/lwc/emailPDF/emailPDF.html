@@ -1,0 +1,11 @@
+<template>
+  <template if:true={datatodisplay}>
+    <p><b>{subjectDataToDisplay}</b></p>
+    <br>
+    <lightning-formatted-rich-text value={datatodisplay} ></lightning-formatted-rich-text>
+        <div slot="footer" class="slds-align_absolute-center" style="background-color: hsl(0, 0%, 100%); padding: 1rem;">
+              <lightning-button variant="neutral" label="Create PDF" onclick={createPdf}></lightning-button>
+              <lightning-button variant="destructive" label="Close" onclick={handleCase}></lightning-button>
+        </div>
+  </template>>
+</template>
